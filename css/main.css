@@ -1,0 +1,305 @@
+
+
+/* ========================================
+   Author' Lic. Javier Salvador Ruiz Sámano
+   ======================================== */
+
+@font-face {
+    font-family: "GillSansLightRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/ufonts.com_gillsans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ufonts.com_gillsans-light-webfont.woff") format("woff"), url("../fonts/ufonts.com_gillsans-light-webfont.ttf") format("truetype"), url("http://www.philiphousenyc.com/wp-content/themes/philip_house/library/css/fonts/ufonts.com_gillsans-light-webfont.svg#GillSansLightRegular") format("svg");
+}
+
+body
+{
+	font-family: "GillSansLightRegular";
+	margin: 0;
+	padding: 0;
+	font-size: 1.4em;
+	line-height: 1.6em;
+	/*background-color: black;*/
+}
+
+body > section
+{
+	padding: 50px 0;
+	clear: both;
+}
+
+h1
+{
+	font-weight: bold;
+	letter-spacing: 1.3em;
+	text-transform: uppercase;
+}
+
+h2 {
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+h3 {
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h4
+{
+	color: #02a0c5;
+}
+
+.separador
+{
+	width: 40px;
+	height: 4px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	background: black;
+}
+
+/* ============================
+   				Menu
+   ============================ */
+   .navbar-default
+   {
+   	box-shadow: none;
+   	background-color: transparent;
+   	border: none;
+   	background-image: none;
+   	min-height: 90px;
+   	padding-top: 20px;
+
+   }
+   .nav>li>a{
+   	text-transform: uppercase;
+   	font-family: "GillSansLightRegular";
+   	color: #d80055;
+   	font-size: 2.5em;
+   	
+
+   }
+
+   .nav>li>a:hover, .nav>li>a:focus
+   {
+   	background-color: transparent;
+   	color: #02a0c5;
+   }
+
+   .normal
+   {
+   	transition: 1s all ease;
+   }
+
+   .efecto
+   {
+   	background-color: #123156;
+   	min-height: 30px;
+   	box-shadow:  0 0 10px black;
+   	padding-top: 0;
+   	transition: 1s all ease;
+   }
+
+/* ============================
+   			Principal
+   ============================ */
+
+
+section#principal, section#portafolio
+{
+	min-height: 400px;
+	padding-top: 100px;
+	background-image: url("../img/gto.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+}
+
+#principal h3
+{
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+/* ============================
+   			Animaciones
+   ============================ */
+   .anima1, .anima2
+   {
+   	opacity: 0;
+   }
+
+
+/* ============================
+   			Proceso
+   ============================ */
+
+   section#proceso .social
+   {
+   		width: 150px;
+   		height: 150px;
+   		border-radius: 50%;
+   		background-color: #d80055;
+   		margin: 0;
+   		line-height: 180px;
+   		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		color: white;
+  		font-size: 8em;
+   }
+
+/* ============================
+   			Skills
+   ============================ */
+ #skills ul
+ {
+ 	margin-top: 113px;
+ }
+
+ #skills ul li
+{
+	list-style: none;
+	color: #929497;
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	line-height: 35px;
+}
+
+#skills ul li a {
+    border: medium none;
+    color: #929497;
+    font-family: "GillSansLightRegular";
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+    margin: 0 -18px;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#skills ul li a:hover {
+    color: #027f82;
+    font-weight: bold;
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:13px;
+	color:#fff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#444;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+/* ============================
+   			Portafolio
+   ============================ */
+
+   section#portafolio h2
+   {
+   	font-size: 3em;
+   	color: white;
+   }
+/* ============================
+   			Contacto
+   ============================ */
+section#contacto #lema
+{
+	margin: 0 20px;
+}
+
+section#contacto h4
+{
+	font-size: 2em;
+	color: #2f2f2f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
